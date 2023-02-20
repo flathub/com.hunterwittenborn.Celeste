@@ -5,7 +5,7 @@
 
     <name>Celeste</name>
     <developer_name>Hunter Wittenborn</developer_name>
-    <summary>GUI file synchronization client that can sync with any cloud provider</summary>
+    <summary>Sync your cloud files</summary>
 
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
