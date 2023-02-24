@@ -53,9 +53,6 @@ modules:
       - 'mv /app/usr/* /app/'
       - 'rmdir /app/usr'
       
-      # Install our Appstream file.
-      - 'install -Dm 644 com.hunterwittenborn.Celeste.metainfo.xml /app/share/metainfo/com.hunterwittenborn.Celeste.metainfo.xml'
-
       # Remove uneeded files.
       - |
         find /app \
@@ -74,5 +71,3 @@ modules:
         url: 'https://api.snapcraft.io/api/v1/snaps/download/a9zAmHVl4doDwIGkptVyA7VI7fMlPPpE_19.snap'
         sha256: '7b25a16367e14059ab13d140eda91b2a7521c7c720c6aa2dca0c28dfc8cd2b29'
         dest-filename: 'celeste.snap'
-      - type: 'file'
-        path: 'com.hunterwittenborn.Celeste.metainfo.xml'
