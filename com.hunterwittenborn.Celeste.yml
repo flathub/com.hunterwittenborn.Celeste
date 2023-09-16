@@ -67,6 +67,6 @@ modules:
 
     sources:
       - type: 'file'
-        url: 'https://api.snapcraft.io/api/v1/snaps/download/a9zAmHVl4doDwIGkptVyA7VI7fMlPPpE_27.snap'
-        sha256: '820e4890f3c17b0a024820ff3f2b507bacbd061c67b5ce3bfc16dc2dc49ec713'
+        url: 'https://api.snapcraft.io/api/v1/snaps/download/a9zAmHVl4doDwIGkptVyA7VI7fMlPPpE_28.snap'
+        sha256: 'd1c7d1783af0d8c097043153cc3aa5ef1057a0cafb410462803df86d6e0fb45d'
         dest-filename: 'celeste.snap'
