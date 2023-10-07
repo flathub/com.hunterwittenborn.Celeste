@@ -29,7 +29,7 @@ modules:
     cleanup:
       - '*'
     build-commands:
-      - "sed -i 's|#XZ_SUPPORT|XZ_SUPPORT|' squashfs-tools/Makefile"
+      - "sed -i 's|#LZO_SUPPORT|LZO_SUPPORT|' squashfs-tools/Makefile"
       - 'cd squashfs-tools/ && make unsquashfs'
       - 'install -Dm 755 squashfs-tools/unsquashfs /app/bin/unsquashfs'
     sources:
