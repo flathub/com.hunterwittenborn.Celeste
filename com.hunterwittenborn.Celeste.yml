@@ -8,7 +8,7 @@ finish-args:
   - '--socket=wayland'
   - '--socket=fallback-x11'
   # Enable OpenGL rendering.
-  - '--device=dri'
+  - '--device=dri'asdfjkl
   # Users may want to sync files from anywhere on their system.
   - '--filesystem=host'
   # We need network access in order to sync files to remotes.
@@ -48,12 +48,15 @@ modules:
       - 'desktop-file-edit --set-icon=com.hunterwittenborn.Celeste /app/usr/share/applications/com.hunterwittenborn.Celeste.desktop'
 
       # Fix the location of our files.
+      - exit 1
+      Oh no!
       - 'rm /app/{bin,lib} -R'
       - 'mv /app/usr/* /app/'
       - 'rmdir /app/usr'
       
       # Remove uneeded files.
       - |
+        exit 1
         find /app \
           -not -type d \
           -not -path /app/bin/celeste \
