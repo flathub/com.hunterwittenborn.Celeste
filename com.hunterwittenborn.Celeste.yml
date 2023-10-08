@@ -1,6 +1,6 @@
 app-id: com.hunterwittenborn.Celeste
 runtime: org.gnome.Platform
-runtime-version: "43"
+runtime-version: "45"
 sdk: org.gnome.Sdk
 command: celeste
 finish-args:
@@ -16,9 +16,12 @@ finish-args:
   # Used for X11 performance as described at
   # https://docs.flatpak.org/en/latest/sandbox-permissions-reference.html#f1.
   - '--share=ipc'
-  # DBus sockets we needs.
+  # DBus sockets we need for tray access. Taken from https://github.com/flathub/com.discordapp.Discord/blob/a4b3f6e47f61f0ddb2537181812e1696f58b4eba/com.discordapp.Discord.json#L24-L28.
   - '--talk-name=org.kde.StatusNotifierWatcher'
   - '--talk-name=com.canonical.AppMenu.Registrar'
+  - '--talk-name=com.canonical.indicator.application'
+  - '--talk-name=com.canonical.Unity.LauncherEntry'
+  - '--own-name=org.kde.*'
   # Extra libraries that we've bundled with the Flatpak in order to run.
   # '/usr/lib/x86_64-linux-gnu' is exposed by default, but if we specify
   # one we have to specify them all.
