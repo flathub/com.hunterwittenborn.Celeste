@@ -1,0 +1,12 @@
+name: rclone
+buildsystem: simple
+build-options:
+  append-path: '/usr/lib/sdk/golang/bin'
+build-commands:
+  - go build -mod=vendor .
+  - install -Dm755 -t /app/bin/ rclone
+sources:
+  - type: archive
+    url: https://github.com/rclone/rclone/archive/refs/tags/v1.69.1.zip
+    sha256: 17ab9031978a9f709c57ac8893b4f45479e2dd074681670ab9e361a2b6b061c7
+  - go-sources.yml

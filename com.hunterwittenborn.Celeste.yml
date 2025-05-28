@@ -35,6 +35,7 @@ finish-args:
   # one we have to specify them all.
   - '--env=LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/app/lib/x86_64-linux-gnu'
 modules:
+  - ./rclone/rclone.yml
   - name: celeste
     buildsystem: simple
     build-options:
