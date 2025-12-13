@@ -52,7 +52,7 @@ modules:
 
       # Fix the location of our files.
       - 'rm /app/{bin,lib} -R'
-      - 'mv /app/usr/* /app/'
+      - 'cp -r /app/usr/* /app/'
       - 'rmdir /app/usr'
       
       # Remove uneeded files.
